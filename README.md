@@ -16,7 +16,7 @@ This was designed to be run on a freshly installed Raspberry pi with Raspbian (t
 1. Install a Raspberry pi with Raspbian 10 (or later)
 
 2. go to the home folder:
-	- *cd ~*
+	- *cd ~ *
 
 3. Update the system
 	- *sudo apt update && sudo apt upgrade*
@@ -29,7 +29,7 @@ This was designed to be run on a freshly installed Raspberry pi with Raspbian (t
 	
 6. Setup the correct IP, Port and TTL for the system
 	- *cd raspberry-multicast-test-streamer*
-	- *sudo nano steam.sh*
+	- *sudo nano stream.sh*
 	
 	- Edit the setting to what IP, Port and TTL should be needed.
 	
