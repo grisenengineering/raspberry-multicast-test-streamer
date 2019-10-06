@@ -1,0 +1,13 @@
+To install on a raspberry run the following commands:
+
+.Install packages (VLC)
+sudo apt install vlc
+
+.To start streaming manualy just run 
+stream.sh
+
+.To stream automaticaly when the pi is booted run
+sudo crontab -e
+
+.Add the following line at the end (set the path accordingly if not located in /home/pi)
+@reboot /home/pi/Raspberry-multicast-test-steamer/stream.sh
