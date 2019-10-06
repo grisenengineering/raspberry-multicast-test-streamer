@@ -1,4 +1,4 @@
-# Raspberry-multicast-test-steamer
+# raspberry-multicast-test-streamer
 This is a simple Raspberry Pi-based tester for testing multicast routing, IGMP and other related settings. It continously sends a video stream of nyan cat to a selected 
 multicast address and the stream can easily be recieved by a computer with VLC installed.
 
@@ -24,10 +24,10 @@ This was designed to be run on a freshly installed Raspberry pi with Raspbian (t
 	sudo apt install git vlc
 
 5. Clone the git repository
-	git clone https://github.com/grisenengineering/Raspberry-multicast-test-streamer
+	git clone https://github.com/grisenengineering/raspberry-multicast-test-streamer
 	
 6. Setup the correct IP, Port and TTL for the system
-	cd Raspberry-multicast-test-streamer
+	cd raspberry-multicast-test-streamer
 	sudo nano steam.sh
 	
 	Edit the setting to what IP, Port and TTL should be needed.
@@ -36,6 +36,6 @@ This was designed to be run on a freshly installed Raspberry pi with Raspbian (t
 	sudo crontab -e
 	
 	Add the following line to the end:
-	@reboot /home/pi/Raspberry-multicast-test-streamer/stream.sh
+	@reboot /home/pi/raspberry-multicast-test-streamer/stream.sh
 	
 8. Done, it should now stream all the time when it is powered up.
