@@ -11,9 +11,5 @@ ttl=5 # TTL of the multicast packages
 # User to run vlc since VLC can not be run as root
 videouser=pi
 
-echo $videofile
-echo $ip
-echo $port
-echo $ttl
-
+# Run the video as a loop and stream it to the network
 sudo -u $videouser cvlc -vvv $videofile --sout "#rtp{dst=$ip,port=$port,mux=ts,sap,name=Nyan}" --no-sout-all --sout-keep --ttl=$ttl --loop
