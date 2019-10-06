@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # Path to the videofile to stream
-videofile=$PWD/nyan_cat.mp4
+videofile=/home/pi/raspberry-multicast-test-streamer/nyan_cat.mp4
 
 # Network settings
 ip=239.255.1.1 # multicast IP to stream video to
